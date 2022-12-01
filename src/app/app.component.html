@@ -18,7 +18,7 @@
               #username="ngModel">
               <span class="form-group" style="color: red" *ngIf="!username.valid && username.touched">Please enter a username!</span>
           </div>
-          <button class="btn btn-default" type="button">Suggest an Username</button>
+          <button class="btn btn-default" type="button" (click)="suggestUserName()">Suggest an Username</button>
           <div class="form-group">
             <label for="email">Mail</label>
             <input type="email" id="email" class="form-control" ngModel name="email" required email #email="ngModel">
